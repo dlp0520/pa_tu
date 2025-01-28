@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prefinal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+  
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+  
+    .video-background video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      filter: brightness(50%);
+    }
+  
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      height: 100%;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      overflow-y: auto; 
+    }
+  
+    .content div {
+  max-width: 100%;  
+  margin: 0 auto;  
+  text-align: justify; 
+  padding: 10px; 
+}
+
+  
+    
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      word-wrap: break-word;  
+    }
+  
+    .content p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      word-wrap: break-word; 
+    }
+   .espacio{
+
+    height: 55rem;
+
+
+
+   }
+   
+    @media (max-width: 768px) {
+
+      .espacio {
+
+         height: 120rem;
+
+      }
+
+
+      .content div {
+  max-width: 100%; 
+  margin: 0 auto;   
+  text-align: justify; 
+  padding: 10px; 
+}
+
+  .content p {
+    font-size: 1.2rem; 
+    line-height: 1.5; 
+    word-wrap: break-word; 
+  }
+
+  .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      word-wrap: break-word; 
+    }
+}
+  
+@media (max-width: 480px) {
+
+  .espacio {
+
+height: 55rem;
+
+}
+
+  
+  .content p {
+    font-size: 1rem;  
+    line-height: 1.4;
+  }
+
+  .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      word-wrap: break-word;  
+    }
+}
+
+
+@media (max-width: 820px) {
+
+.espacio {
+
+height: 120rem;
+
+}
+
+
+ 
+}
+
+
+@media (max-width: 390px) {
+
+.espacio {
+
+height: 120rem;
+
+}
+
+
+.content p {
+  font-size: 1rem;  
+  line-height: 1.4;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    word-wrap: break-word;  
+  }
+}
+
+  
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+    }
+  
+    #overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  
+    #startButton {
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    #startButton:hover {
+      background-color: #cccccc;
+    }
+  
+    audio {
+      display: none; 
+    }
+
+    
+
+    .hidden-button {
+      opacity: 0;  
+      visibility: hidden; 
+      transition: opacity 5s ease-in-out, visibility 5s ease-in-out;  
+      margin-top: 20px;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible; 
+}
+  </style>
+  
+  
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   
+  <div class="video-background">
+    <video id="backgroundVideo" muted loop>
+      <source src="video/fondo.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+  </div>
+
+   
+  
+  <div class="content" id="mainContent">
+    <div class="espacio"></div>
+    <div style="text-align: left;">
+      <div class="espacio"></div>
+      <h1>Querida Ain Amira</h1>
+      <p>¿Alguna vez te imaginaste recibir una carta digital? Quizás sí, pero yo nunca pensé en escribir algo así para alguien. Sin embargo, aquí estoy, haciéndolo para ti, alguien que fue tan importante en mi vida, la persona a la que de verdad amé. Pensar que se acercan nuestros últimos minutos juntos… ¿Quién sabe si volveré a verte?
+
+        La verdad, ya ni siquiera entiendo del todo por qué terminamos. Con todo lo que pasó, supongo que ya no hay vuelta atrás. Sin embargo, mi corazón sigue aferrado a la esperanza de que algún día volveremos. Todo lo que te dije alguna vez —casarnos, vivir juntos— lo dije con el corazón, con la seguridad absoluta de que lo cumpliría. Pero esas promesas ahora me atan, y siento que me seguirán atando hasta el final de mis días.
+        
+        Sé que mi vida no volverá a ser la misma, pero debo aceptar que eres un ser libre. Debo respetar tus decisiones porque, si de verdad te amaba, debía aceptarte tal como eres. Aunque, honestamente, me cuesta hacerlo. Tu deseo era salir de ese agujero, y yo solo quería ayudarte, quizás a mi manera. La verdad es que nunca fuiste una carga para mí. Nunca. Tal vez porque estaba completamente dispuesto a ser tu apoyo. Supongo que eso es lo que harían unos esposos: estar el uno para el otro, sin importar qué.
+        
+        Ahora, solo me queda aceptar las cosas tal como son. Tú quieres a otra persona, y si no funciona con él, tal vez lo intentes con alguien más. Eres libre de hacerlo. Quiero aceptar que ya no somos nada, pero mi corazón sigue aferrado a esas ideas, a esas promesas. Aun así, deseo que seas feliz, donde sea que estés. No quiero ser una carga para ti ni recordarte culpas que alguna vez sentiste. Ve, explora, conoce a nuevas personas.
+        
+        ¿Recuerdas cuando me contaste que soñaste que tenías a otro chico? ¿Y recuerdas cuando te dije que tal vez ambos éramos solo parte de un proceso? Quizás solo llegué a tu vida para que después encontraras a alguien que realmente conecte contigo, alguien que valga la pena para ti. Espero que lo encuentres. Y espero que lo que vivimos juntos te haya servido para saber cómo tratar al verdadero amor de tu vida.
+        
+        Deseo que te sientas completa y que encuentres ese complemento que tanto anhelas. Siempre voy a desear que estés bien. Nunca querré nada malo para ti. Espero que encuentres lo que buscas. Y también espero que puedas resolver tus problemas internos. Por favor, no permitas que en el futuro veas lo bueno como malo y lo malo como bueno. Como te dije antes, vivimos en una sociedad tan podrida que puede confundirnos sobre lo que realmente importa.
+        
+        Gracias por haber estado a mi lado, por darme cariño a pesar de todos mis defectos. Ahora que estoy lejos, es cuando más quiero mejorar, por haber sido mejor durante nuestra relación. Ahora me doy cuenta de cuán importantes son días como San Valentín o el día de la primavera. No los valoré lo suficiente porque mi mente estaba más enfocada en el futuro que en el presente. Ahora me arrepiento de todos esos 14 y 21 que no celebramos como se debía. Pensaba tanto en un futuro contigo que daba por sentado que llegaría el momento en el que viviríamos juntos. Hoy entiendo que también era importante disfrutar del presente.
+        
+        Perdóname por haberte fallado. Una de las razones por las que quería que fueras mi esposa era porque siempre me apoyaste. Siempre quisiste comprenderme. Y al ver a otras parejas con problemas por la falta de apoyo y comprensión, pensaba: "Ella tiene que ser mi mujer". Pero, por alguna razón, nunca me abrí del todo contigo. Tal vez era como tú decías: quería protegerte de lo que me pasaba.
+        
+        Gracias por confiarme tus problemas, por compartir conmigo la historia de tu vida, por regalarme tu tiempo, que siempre fue tan valioso. A pesar de tus errores, siempre buscaste maneras de hacerme confiar en ti de nuevo, de brindarme seguridad. Y, aunque suene agridulce, debo admitir que contigo sentía inseguridades, pero también me dabas tanta seguridad que me hacía pensar que, si hubiese estado con otra persona, esa otra persona probablemente no habría intentado reparar las cosas como tú lo hacías.
+        
+        Hoy solo me queda agradecer al tiempo por haberte traído a mi vida. Deseo que estés bien, donde sea que estés, con quien sea que estés. Que esa persona te trate mejor que yo. Que donde vayas te cuides y que puedas sanar todas esas heridas internas. Que logres mantenerte lejos de lo malo y que vivas cada día plenamente. Mis sentimientos llegaron a tal punto que, aunque no esté en tu vida, tu simple existencia en este mundo me hace amarte como si fueras la única persona a la que correría a sus brazos.
+        
+        Te amo mucho, Ain Amira.
+
+      </p>
+      <a href="gracias.html"><button  id="delayedButton" type="button" class="btn btn-outline-light hidden-button"><h3>Seguir</h3></button></a>
+    </div>
+  
+  </div>
+
+   
+  <div id="overlay">
+    <button id="startButton" type="button" class="btn btn-outline-light">Abrir carta</button>
+  </div>
+
+  
+  <audio id="backgroundMusic" loop>
+    <source src="musica/ew.mp3" type="audio/mpeg">
+    Tu navegador no soporta la reproducción de audio.
+  </audio>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    const mainContent = document.getElementById('mainContent');
+    const backgroundVideo = document.getElementById('backgroundVideo');
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    const startButton = document.getElementById('startButton');
+    const delayedButton = document.getElementById('delayedButton');
+
+     
+    startButton.addEventListener('click', () => {
+      
+      overlay.classList.add('hidden');
+
+       
+      mainContent.style.opacity = 1;
+
+       
+      backgroundVideo.play().catch(err => console.error("Error al reproducir el video:", err));
+      backgroundMusic.play().catch(err => console.error("Error al reproducir el audio:", err));
+    });
+   
+
+ 
+setTimeout(() => {  
+  delayedButton.classList.add('visible');  
+}, 15000); 
+    
+
+
+  </script>
+</body>
+</html>

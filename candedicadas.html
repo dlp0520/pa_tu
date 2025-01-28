@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canciones dedicadas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: black;
+      color: white;
+      transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-size: cover;  
+            background-position: center; 
+            background-attachment: fixed;  
+    }
+
+    h1 {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .acordeon .contenedor {
+      position: relative;
+      margin: 10px 10px;
+    }
+
+    .acordeon .etiqueta {
+      position: relative;
+      padding: 10px 0;
+      font-size: 30px; 
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+    }
+
+    .acordeon .etiqueta::before {
+      content: '+';
+      color: rgb(255, 255, 255);
+      position: absolute;
+      top: 50%;
+      right: -5px;
+      font-size: 35px;
+      transform: translateY(-50%);
+    }
+
+    .acordeon .contenido {
+      position: relative;
+      background: rgba(255, 255, 255, 0);
+      height: 0;
+      font-size: 28px;
+      text-align: justify;
+      width: 780px;
+      overflow: hidden;
+      transition: height 0.5s ease;
+    }
+
+    .acordeon hr {
+      width: 100%;
+      margin-left: 0;
+      border: 1px solid rgba(128, 128, 128, 0);
+    }
+
+    .acordeon .contenedor.activa .contenido {
+      height: auto;
+    }
+
+    .acordeon .contenedor.activa .etiqueta::before {
+      content: '-';
+      font-size: 30px;
+    }
+
+    
+    @media (max-width: 1024px) {
+      .acordeon .etiqueta {
+        font-size: 26px;  
+      }
+
+      .acordeon .contenido {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .acordeon .etiqueta {
+        font-size: 22px; 
+      }
+
+      .acordeon .contenido {
+        font-size: 18px; 
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .acordeon .etiqueta {
+        font-size: 18px; 
+      }
+
+      .acordeon .contenido {
+        font-size: 14px; 
+      }
+    }
+    @media (max-width: 768px) {
+            body {
+                background-position: 35% center;  
+            }
+        }
+  </style>
+</head>
+<body>
+    <div class="acordeon-cuerpo">
+        <div class="acordeon">
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+          <h1><strong>Canciones que te dedico y su significado</h1>
+          <hr>
+          <div class="contenedor">
+            <div class="etiqueta">1. Joji - Die For You</div>
+            <div class="contenido">Escuché que eres feliz sin mí, y espero que sea verdad. Eso me mata, pero está bien porque moriría por vos.
+
+                Frases como esta contiene "Die for You" de Joji, donde nos habla de cómo está dispuesto a morir por la felicidad de la persona que ama, aunque ella sea feliz con otra persona. La canción comienza diciendo que no ha podido dormir nada y que ya ni siquiera tiene sentido apagar las luces porque sabe que no podrá descansar sin que ella esté a su lado.
+                
+                Siente que quedaron muchas cosas por hablar y sentimientos por expresar, porque todo terminó tan rápido que Joji ni siquiera se dio cuenta hasta que fue demasiado tarde. De verdad la necesita, y mientras lucha por aprender a dejarla ir, se entera de que ella ya es feliz con alguien más.
+                
+                Eso lo destruye por dentro, pero espera que sea verdad porque moriría por ella. A pesar de lo mucho que sufre por esta situación, aún moriría por ella. Desea que esté obteniendo todo lo que necesita, que se sienta completa y que sea feliz, aunque ni siquiera pueda decírselo, porque el único momento en que pueden hablar es en sus sueños.</div>
+          </div>
+           
+          <div class="contenedor">
+            <div class="etiqueta">2. Anil Emre Daldal - M.</div>
+            <div class="contenido">Esta canción transmite la intensidad emocional y la fragilidad que acompaña a un amor perdido. A través de su letra, el yo lírico revela un profundo deseo de reconectar con alguien que marcó su vida de manera significativa.
+                La sensación de vacío y confusión, como si estuviera extraviado en un inmenso cielo, refleja la lucha interna por aceptar la ausencia mientras se aferra a los recuerdos.
+                La súplica constante por el regreso de ese amor encapsula tanto la esperanza como la desesperación, mostrando lo difícil que es soltar aquello que ha dejado cicatrices en el alma.</div>
+          </div>
+           
+          <div class="contenedor">
+            <div class="etiqueta">3. Mac DeMarco - My Kind Of Woman</div>
+            <div class="contenido"> Es una canción que celebra el afecto y la conexión emocional. El narrador expresa su aprecio por una mujer que lo vuelve loco y por quien está dispuesto a estar a su lado, independientemente de las circunstancias. La canción transmite una sensación de comodidad y amor incondicional.
+
+                El verso inicial refleja la idea de que esta mujer puede volverse "loca", pero eso no es un problema para el narrador, ya que está dispuesto a aceptarla tal como es. La canción destaca la importancia de la compañía y la intimidad en la relación.
+                
+                El puente resalta la idea de que esta mujer es única y que es la única que hace sentir al narrador de esa manera. La canción comunica una sensación de dependencia emocional y amor profundo.
+                
+                En general, "My Kind of Woman" es una canción que celebra el amor y la conexión genuina entre dos personas, destacando la aceptación mutua y la devoción.</div>
+          </div>
+          <div class="contenedor">
+            <div class="etiqueta">4. Bad Bunny - DtMF</div>
+            <div class="contenido">"DTMF" es ese golpe en el pecho que sientes cuando recuerdas todo lo que no hiciste, todas las fotos que no tomaste, todos los abrazos que no diste. Es mirar hacia atrás y darte cuenta de que, mientras pensabas que el tiempo era eterno, él seguía corriendo, llevándose risas, besos, atardeceres y personas.
+
+                Bad Bunny lo dice claro: "Debimos haber vivido más, haber amado más". Pero ahora, desde esta nostalgia que solo el presente te permite sentir, nos invita a reflexionar.
+                
+                La canción nos recuerda la importancia de capturar momentos especiales y expresar nuestro afecto mientras podemos. Nos enseña que, a veces, es demasiado tarde cuando nos damos cuenta de lo valioso que era el tiempo que teníamos.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">5. Mareux - The Perfect Girl</div>
+            <div class="contenido">Parece expresar la fascinación y el deseo de estar con una chica que se considera extraña y misteriosa. En el coro, se describe a la chica como una persona peculiar, sugiriendo incluso que proviene de otro mundo.
+
+                El narrador no comprende lo que ella dice o hace, lo cual aumenta su curiosidad y asombro. Expresa el deseo de "sacudirla y darle vueltas" y de "darle la vuelta por completo", lo que podría reflejar un anhelo de entenderla mejor y descubrir más sobre su naturaleza enigmática.
+                
+                En el puente, el narrador confiesa estar enamorándose de ella y siente que está cayendo profundamente en el amor. Esto indica que la fascinación inicial por su singularidad ha evolucionado hacia sentimientos más profundos y genuinos.
+                
+                En general, es una canción que evoca una atracción intensa hacia una chica enigmática y única. La canción resalta el deseo de comprenderla y establecer una conexión emocional profunda con ella, a pesar de su carácter misterioso.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">6. Joji - Demons</div>
+            <div class="contenido">En esta canción, Joji nos habla de cómo su corazón sigue encadenado a la persona que amó, aun siendo consciente de que esa relación ha muerto. Al inicio, menciona que unos demonios vienen a susurrarle cosas por la noche. Lo más probable es que le recuerden momentos que pasó junto a esa persona o cosas similares, porque nos dice que, cuando ellos llegan, le arrebatan el corazón, al igual que lo hizo ella.
+
+                Estos demonios no paran de insistirle a Joji que los siga, así que él se rinde y decide hacerlo. Esto lo lleva a hablar de cómo terminó atrapado en esta situación. Cuando el amor que tenían perdió su brillo, él cayó en una fosa y comenzó a portarse bien por miedo a que la relación muriera demasiado pronto. Hizo todo lo que pudo para mantenerse junto a ella, pero nada funcionó.
+                
+                Este hecho está muy bien representado en el video, donde vemos una especie de monstruo rojo, que parece un corazón con piernas, encadenado al fondo de una piscina vacía. Nos lo muestran así porque, en In Tongues, el álbum al que pertenece esta canción, el color rojo se utiliza para representar sentimientos fuertes como el amor o el odio, mientras que el azul simboliza la tristeza o dejar ir.
+                
+                Sin embargo, en "Demons", lo único rojo es el corazón con piernas encadenado al fondo de una piscina a la que le falta lo más importante: el agua. Lo que podría haber sido de color azul en el video aparece marrón y sucio, lo que sugiere lo siguiente: a pesar de que ha pasado tanto tiempo y de que ya ni siquiera queda tristeza, su corazón sigue atrapado y encadenado a la persona que amó. Joji no ha logrado salir de la fosa en la que cayó hace tanto tiempo.
+                
+                Por eso, le advierte a ella sobre su situación y termina rogándole que, por favor, lo deje ir, porque ya ha visto suficiente y sabe que lo que tenían murió hace mucho. Sin embargo, el monstruo no logra ser libre y vuelve a dormir, esperando a que los demonios lo hagan latir de nuevo.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">7. Bad bunny - El Clúb</div>
+            <div class="contenido">Habla de esa pregunta que no nos deja estar bien: ¿cómo estará nuestro ex? Ese punto donde hay cero contacto con esa persona que nos marcó tanto. ¿Estará bien o estará mal? ¿Me ama o me odia? ¿Me extraña o está con otra persona?
+
+                El tiempo pasa y las heridas sanan, pero parece que estás estancado en el pasado, siendo atormentado por algo llamado nostalgia. Ahora, en el club, estás de fiesta tratando de calmar los pensamientos. La disco está llena, pero tú estás vacío. Y en el momento en que el alcohol se convierte en tu consejero...
+                
+                "2021, el tiempo pasó muy rápido para ti. 2022, la última vez que fuiste feliz. 2023, la última vez que pude verte a ti."
+                
+                Me sigo preguntando si todavía piensas en mí y si alguna vez me nombras. Espero que, cuando lo hagas, sea un buen recuerdo sobre mí.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta"> 8. Joji - Gimme Love</div>
+            <div class="contenido">La canción representa el deseo de escapar de un mundo lleno de cosas que se sienten vacías sin la persona que amas. Comienza con Joji diciéndole a su ex: "Dame amor cuando ya me haya ido", una frase que repite como si le estuviera diciendo: "Ahora que me rindo y me voy, seguro que por fin podrás amarme".
+
+                Durante "Nectar", el álbum al que pertenece esta canción, hemos visto cómo Joji perdió todo lo que una vez significó el mundo que creó junto a la persona que amaba. Ahora, separados, él se encuentra atrapado en un infierno emocional, rodeado de gente falsa.
+                
+                Por eso, en el video de "Gimme Love", vemos cómo Joji alcanza su límite y roba un cohete, mientras le suplica a su ex que mire dentro de su corazón y le diga si todo empieza a sentirse vacío a medida que él se aleja de su vida. También le pregunta si, cuando esté demasiado lejos, finalmente será capaz de mostrarle algo de amor.
+                
+                Está a punto de literalmente abandonar el planeta, porque donde sea que mire ve un mundo lleno de recuerdos y sueños rotos. Joji sabe que todos buscan a alguien a quien abrazar, pero él ya no puede hacerlo.
+                
+                Entonces, al aceptar que nada cambiará, llega a la conclusión de que, si no puede dejarla ir, tendrá que ser él quien se vaya. Sin embargo, mientras vemos cómo se prepara para este gran salto, también percibimos su duda sobre si el camino que está por seguir es realmente el correcto, porque, en el fondo, sabe que solo está huyendo de sus problemas.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta"> 9. Joji - Like You Do </div>
+            <div class="contenido">En esta canción se nos cuenta cómo el protagonista no puede sacarse de la cabeza el miedo de que su camino y el de la persona que ama vayan por lugares diferentes. Ella hizo que cada día sombrío brillara un poco más, que sintiera esa felicidad y escalofríos que nadie más podrá hacerlo sentir. Entonces, ahora él piensa que jamás la podrá reemplazar. Sabe que tal vez lleguen personas mucho mejores y que incluso lo amen más de lo que su ex lo amó, pero uno de los tantos problemas es que nadie podrá amarlo como ella lo hizo.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">10. Bad bunny - La Cancion</div>
+            <div class="contenido">Trata de alguien que cree haber dejado atrás una relación pasada, pero las emociones y recuerdos resurgen cuando escucha una canción que solían cantar juntos. El protagonista se muestra autocrítico al darse cuenta de que cometió errores en el proceso de intentar olvidar a su expareja. A pesar de que el protagonista intenta convencerse de que superó la relación y que ya no le importa, la canción revela que aún existen sentimientos latentes. Habla de la contradicción entre querer olvidar a esa persona y, al mismo tiempo, ser incapaz de hacerlo, ya que la canción despierta esos sentimientos que pensaba tener bajo control. Aunque intenta seguir adelante y salir a la calle sin ataduras emocionales, el corazón sigue llevando un vacío debido a la ausencia de su antigua pareja.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">11. Videoclub - Amour Plastique</div>
+            <div class="contenido">La canción explora la pasión, el deseo y la intensidad de una relación amorosa. La letra revela una conexión profunda entre dos personas que se pierden en el amor del otro. Las metáforas como "me ahogo en la ola de tu mirada amorosa" y "ámame hasta que las rosas se marchiten" subrayan la ardiente pasión que comparten. Sin embargo, la canción también toca la tristeza y la melancolía, con referencias a lágrimas y demonios internos. Esto sugiere que, aunque el amor es intenso, no está exento de desafíos y momentos difíciles. Las preguntas sobre la identidad y las referencias a Romeo y Julieta añaden una capa de complejidad a la narrativa, insinuando una búsqueda de significado en la relación. En resumen, "Amour Plastique" es una canción que captura la dualidad de las emociones en una relación apasionada, donde el amor y la intensidad se entrelazan con la tristeza y la búsqueda de significado.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">12. Drums - The Money</div>
+            <div class="contenido">Una canción que expresa el deseo de mostrar afecto a pesar de la falta de recursos financieros, resaltando la importancia de la conexión emocional sobre las posesiones materiales.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">13. The Marias - Lejos De Ti</div>
+            <div class="contenido">La letra transmite una sensación de añoranza y nostalgia por una relación pasada. La cantante recuerda los momentos compartidos con su pareja y expresa el dolor de estar separados y no poder olvidarlo. A pesar de la distancia, la cantante se aferra a los recuerdos y sentimientos asociados con su pareja, preguntándose por qué todavía lo ama y su necesidad de expresar su desamor a través de la música. La canción captura de manera emotiva la esencia del amor perdido, destacando cómo los lazos pueden sobrevivir incluso a la ausencia física, dejando una huella imborrable en el corazón.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">14. Eyedress - Romantic Lover</div>
+            <div class="contenido">Es una cancion que habla sobre estar profundamente enamorado de alguien que parece ser la pareja perfecta . El titulo "Romantic lover" sugiere una persona de ensueño,casi ideal,que encarna el romance perfecto.La cancion tiene una melodia
+                suave y tranquilizante que te hace sentir como si estuvieras flotando, capturando la emocion y calidez de estar enamorado. Describe la sensacion de estar completamente cautivado por alguien,pensando en esa persona constantemente
+                y deseando estar cerca de ella en todo el tiempo.
+                
+                la letra repite la idea de que este amor es algo especial y fuera de lo comun,casi como un sueño del que no quieres despertar. La musica, con su ritmo lento y relajante,crea un ambiente de nostalgia y anhelo,evocando momentos felices y romanticos.
+                en general,la cancion trata sobre las emociones profundas y la felicidad que provienen de estar enamorado de alguien que parece ser el complemento perfecto,retratando el amor como algo magico y absorbente.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">15. Juice WRLD - Lucid Dreams</div>
+            <div class="contenido">Es una ventana al dolor emocional y la angustia que siente alguien después de una ruptura amorosa. Juice nos lleva a través de sus sueños lúcidos, donde las líneas entre la realidad y la fantasía se desdibujan, y el dolor del corazón se hace palpable. La letra aborda temas de amor, pérdida y traición, reflejando la lucha interna de superar a alguien que fue una vez importante en su vida.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">16. Dream - welcome and goodbye</div>
+            <div class="contenido">La canción es básicamente el resumen de lo que se siente extrañar a alguien que ya no está. Habla de esos momentos en los que no puedes dejar de pensar en lo que fue, aunque sabes que ya se acabó. Es como un viaje entre los recuerdos bonitos y el dolor de soltar, todo envuelto en una vibra melancólica que pega justo donde duele.</div>
+          </div> <div class="contenedor">
+            <div class="etiqueta">17. The Weeknd - Die For You</div>
+            <div class="contenido">Tiene el mismo significado que Die For You de Joji,pero mas intenso.</div>
+        </div> <div class="contenedor">
+            <div class="etiqueta">18. Mencion especial</div>
+            <div class="contenido">"Y ya nadie sabra,  lo que tu y yo pudo ser" :c .</div>
+                     
+          <hr>
+          <hr>
+          <hr>
+          <hr><hr><hr><hr>
+          <hr>
+          <a href="prefinal.html"><button type="button" class="btn btn-outline-light"><h3>Seguir</h3></button></a>
+          <hr>
+          <hr>
+          <hr>
+          <hr><hr><hr><hr>
+          <hr>
+          <hr>
+          <hr></strong>
+          <hr>
+          <hr><hr><hr><hr>
+          <hr>
+        </body>
+         
+        </div>
+    </div>
+
+    <audio id="audio" style="display:none;"></audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const accordionItems = document.querySelectorAll(".acordeon .contenedor");
+          const audio = document.getElementById("audio");
+      
+          
+          const backgrounds = [
+            "img/1. joji-die for you.jpg",
+            "img/2. M.png",
+            "img/3. my kind of woman.webp",
+            "img/4. dtmf.jpg",
+            "img/5. the perfect girl.jpg",
+            "img/6. joji demons.png",
+            "img/7. el club.jpg",
+            "img/8. gimme love.jpg",
+            "img/9. like you do.jpg",
+            "img/10. la cancion.jpg",
+            "img/11.amour plastique.jpg",
+            "img/12. the money drums.jpg",
+            "img/13. lejos de ti.jpg",
+            "img/14.romantic lover.jpg.png",
+            "img/15. lucid dreams.jpg",
+            "img/16. welcome and goodbye.jpg",
+            "img/17. the weeknd die for you.jpg",
+            "img/me.jpg"
+          ];
+          const audioSources = [
+            "musica/1. joji-die for you.mp3",
+            "musica/2. M.mp3",
+            "musica/3. my kind of woman.mp3",
+            "musica/4. dtmf.mp3",
+            "musica/5. the perfect girl.mp3",
+            "musica/6. joji-demons.mp3",
+            "musica/7. el club.mp3",
+            "musica/8.gimme love.mp3",
+            "musica/9. joji -like you do.mp3",
+            "musica/10. la cancion.mp3",
+            "musica/11. amour plastique.mp3",
+            "musica/12. the money drums.mp3",
+            "musica/13. lejos de ti.mp3",
+            "musica/14. romantic lover.mp3",
+            "musica/15. lucid dreams.mp3",
+            "musica/16.  welcome and goodbye.mp3",
+            "musica/17.  the weeknd die for you.mp3",
+            "musica/klou.mp3"
+          ];
+      
+          accordionItems.forEach((item, index) => {
+            const label = item.querySelector(".etiqueta");
+            const content = item.querySelector(".contenido");
+      
+            label.addEventListener("click", () => {
+              
+              accordionItems.forEach((otherItem) => {
+                if (otherItem !== item) {
+                  const otherContent = otherItem.querySelector(".contenido");
+                  if (otherContent) otherContent.style.height = "0";  
+                  otherItem.classList.remove("activa");
+                }
+              });
+      
+            
+              if (item.classList.contains("activa")) {
+                if (content) content.style.height = "0";  
+                item.classList.remove("activa");
+              } else {
+                const contentHeight = content.scrollHeight; 
+                if (content) content.style.height = `${contentHeight}px`; 
+                item.classList.add("activa");
+              }
+      
+              
+              if (backgrounds[index]) {
+                document.body.style.backgroundImage = `url('${backgrounds[index]}')`;
+              }
+              if (audio && audioSources[index]) {
+                audio.src = audioSources[index];
+                audio.play();
+              }
+            });
+          });
+        });
+
+        
+      </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
