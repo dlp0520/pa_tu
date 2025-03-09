@@ -6,7 +6,6 @@
   <title>Prefinal</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    
     * {
       margin: 0;
       padding: 0;
@@ -61,8 +60,6 @@
       word-wrap: break-word;
     }
 
-    
-
     .visible {
       opacity: 1;
       visibility: visible;
@@ -102,70 +99,74 @@
     }
 
     @media (max-width: 768px) {
-    .image-background {
-      height: 100%;
-      background-size: cover; 
-      background-position: left;  
-      animation: slide 30s linear infinite alternate; 
-      filter: brightness(90%);
+      .image-background {
+        height: 100%;
+        background-size: cover; 
+        background-position: left;  
+        animation: slide 30s linear infinite alternate; 
+        filter: brightness(90%);
+      }
+
+      .content h1 {
+        font-size: 2rem; /* Tamaño de fuente más pequeño para móviles */
+        margin-bottom: 10px;
+        word-wrap: break-word;
+      }
+
+      .content p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño para móviles */
+        line-height: 1.4; /* Espaciado de línea ajustado */
+      }
+
+      .content div {
+        padding: 5px; /* Menos padding para móviles */
+      }
+
+      #startButton {
+        font-size: 1.2rem; /* Tamaño de botón más pequeño para móviles */
+      }
     }
 
-    .content h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-      word-wrap: break-word;
+    @keyframes slide {
+      0% {
+        background-position: left;  
+      }
+      100% {
+        background-position: right; 
+      }
     }
-  }
-
-   
-  @keyframes slide {
-    0% {
-      background-position: left;  
-    }
-    100% {
-      background-position: right; 
-    }
-  }
   </style>
 </head>
 <body>
-  
-  
   <div class="image-background"></div>
 
-  
   <div class="content" id="mainContent">
-    
     <div style="text-align: center;">
       <div class="espacio"></div>
       <p>Si llegaste hasta aquí no es por casualidad, sino porque eres más fuerte de lo que crees</p>  
-<p>Lo que estás haciendo ahora, tomar terapia, hará que el camino se vuelva menos doloroso y pesado</p>  
-<p>Cada sesión es como un ladrillo que colocas, un paso que das para alejarte de la oscuridad</p>  
-<p>Sé que hay días en los que el dolor parece insoportable, en los que el mundo se vuelve gris y sin salida</p>  
-<p>Pero quiero que sepas una cosa:</p>  
-<p>Que el simple hecho de que sigas aquí luchando con todo ese peso que tienes, buscando ayuda, es una prueba</p>  
-<p>de que hay algo en ti que no se rinde. Algo que, incluso en los momentos más difíciles, decide seguir</p>  
-<p>No te rindas, porque cada día que eliges vivir es una victoria</p>  
-<p>Todo lo que decidas decir en terapia, cada lágrima que dejas caer, son semillas que plantas en el jardín de tu futuro</p>  
-<p>Y aunque no lo veas ahora, esas semillas están creciendo</p>  
-<p>El camino no será fácil, pero cada paso que das lo hace menos pesado</p>  
-<p>Eres como una flor que crece entre las grietas, resistente y hermosa, incluso cuando el suelo parece árido</p>  
-<p>Sigue adelante, porque el mundo necesita tu luz, tu risa, tu forma única de ver la vida</p>  
-<p>No estás sola, nunca lo has estado</p>  
-<p>Estaré siempre para ti</p>  
+      <p>Lo que estás haciendo ahora, tomar terapia, hará que el camino se vuelva menos doloroso y pesado</p>  
+      <p>Cada sesión es como un ladrillo que colocas, un paso que das para alejarte de la oscuridad</p>  
+      <p>Sé que hay días en los que el dolor parece insoportable, en los que el mundo se vuelve gris y sin salida</p>  
+      <p>Pero quiero que sepas una cosa:</p>  
+      <p>Que el simple hecho de que sigas aquí luchando con todo ese peso que tienes, buscando ayuda, es una prueba</p>  
+      <p>de que hay algo en ti que no se rinde. Algo que, incluso en los momentos más difíciles, decide seguir</p>  
+      <p>No te rindas, porque cada día que eliges vivir es una victoria</p>  
+      <p>Todo lo que decidas decir en terapia, cada lágrima que dejas caer, son semillas que plantas en el jardín de tu futuro</p>  
+      <p>Y aunque no lo veas ahora, esas semillas están creciendo</p>  
+      <p>El camino no será fácil, pero cada paso que das lo hace menos pesado</p>  
+      <p>Eres como una flor que crece entre las grietas, resistente y hermosa, incluso cuando el suelo parece árido</p>  
+      <p>Sigue adelante, porque el mundo necesita tu luz, tu risa, tu forma única de ver la vida</p>  
+      <p>No estás sola, nunca lo has estado</p>  
+      <p>Estaré siempre para ti</p>  
       <h1>Gracias por todo &lt;3</h1>
-       
-      
     </div>
   </div>
 
-  
   <div id="overlay">
     <button id="startButton" type="button" class="btn btn-outline-light">&lt;3</button>
   </div>
 
-   
-  <audio id="backgroundMusic" >
+  <audio id="backgroundMusic">
     <source src="musica/gracias.mp3" type="audio/mpeg">
     Tu navegador no soporta la reproducción de audio.
   </audio>
@@ -175,16 +176,12 @@
     const mainContent = document.getElementById('mainContent');
     const backgroundMusic = document.getElementById('backgroundMusic');
     const startButton = document.getElementById('startButton');
-     
 
-     
     startButton.addEventListener('click', () => {
       overlay.classList.add('hidden');
       mainContent.style.opacity = 1;
       backgroundMusic.play().catch(err => console.error("Error al reproducir el audio:", err));
     });
-
-    
   </script>
 </body>
 </html>
