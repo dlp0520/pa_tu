@@ -17,6 +17,22 @@
       font-family: Arial, sans-serif;
     }
 
+    .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;  
+  margin: 20px auto;
+  max-width: 560px;  
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
     .image-background {
       position: fixed;
       top: 0;
@@ -136,21 +152,7 @@
 }
 
       
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;  
-  margin: 20px auto;
-  max-width: 560px;  
-}
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
       #startButton {
         font-size: 1.2rem; /* Tamaño de botón más pequeño para móviles */
@@ -243,15 +245,12 @@
     <button id="startButton" type="button" class="btn btn-outline-light">&lt;3</button>
   </div>
 
-  <audio id="backgroundMusic">
-    <source src="musica/gracias.mp3" type="audio/mpeg">
-    Tu navegador no soporta la reproducción de audio.
-  </audio>
+  
 
   <script>
     const overlay = document.getElementById('overlay');
     const mainContent = document.getElementById('mainContent');
-    const backgroundMusic = document.getElementById('backgroundMusic');
+     
     const startButton = document.getElementById('startButton');
 
     startButton.addEventListener('click', () => {
