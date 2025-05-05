@@ -39,6 +39,9 @@
       opacity: 0;
       transition: opacity 1.5s ease-in-out;
       overflow-y: auto;
+       min-height: 100vh; /* Asegura que ocupe al menos toda la pantalla */
+  height: auto; /* Permite que crezca según el contenido */
+  overflow-y: auto; /* Mantén el scroll si hay mucho contenido */
     }
 
     .content div {
@@ -106,14 +109,13 @@
       display: none;
     }
 
-    .video-container {
- position: relative;
+.video-container {
+  position: relative;
   width: 100%;
-       
-  padding-bottom: 56.25%;  
- 
-  max-width: 560px;  
-      
+  padding-bottom: 56.25%; /* Proporción 16:9 (para 560x315) */
+  margin: 20px auto;
+  max-width: 560px; /* Opcional: limita el ancho en desktop */
+  min-height: 200px; /* Altura mínima para evitar que se colapse */
 }
 
 .video-container iframe {
@@ -122,6 +124,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border: none; /* Elimina bordes por defecto */
 }
 
     @media (max-width: 768px) {
